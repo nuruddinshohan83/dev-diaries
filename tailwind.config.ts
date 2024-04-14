@@ -7,5 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [],
+  theme: {
+    extend: {
+      fontFamily: {
+        grotesk: ["var(--font-Grotesk)"],
+        roboto: ["var(--font-roboto)"],
+      },
+    },
+  },
 }
 export default config
