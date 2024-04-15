@@ -52,7 +52,14 @@ export default function RootLayout({
         className={`${roboto.variable} ${Grotesk.variable}  bg-[#130F18] text-white`}>
         <MantineProvider>
           <Navbar />
-          <Flex ca direction="column">
+          <Flex
+            className="z-10 border-2 border-blue-800"
+            direction="column"
+            w="100%"
+            style={{
+              minHeight: "calc(100vh - 60px)",
+            }}
+            mt="60px">
             {children}
           </Flex>
         </MantineProvider>
